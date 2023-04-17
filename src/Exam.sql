@@ -53,11 +53,11 @@ create table customers(
 );
 
 create table rent_info(
-                           id serial primary key ,
-                           owner_id int references owners(id),
-                           customers_id int references customers(id),
-                           agency_id int references agencies(id),
-                           house_id int references houses(id)
+                          id serial primary key ,
+                          owner_id int references owners(id),
+                          customers_id int references customers(id),
+                          agency_id int references agencies(id),
+                          house_id int references houses(id)
 );
 
 
